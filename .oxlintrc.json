@@ -1,0 +1,22 @@
+{
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"plugins": ["oxc", "typescript", "unicorn", "import"],
+	"categories": {
+		"correctness": "error",
+		"perf": "error",
+		"suspicious": "error"
+	},
+	"env": {
+		"builtin": true,
+		"browser": true,
+		"commonjs": true,
+		"node": true,
+		"shared-node-browser": true
+	},
+	"ignorePatterns": ["**/node_modules"],
+	"rules": {
+		"eslint/arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
+		"import/no-cycle": "error",
+		"typescript/consistent-type-imports": "off"
+	}
+}

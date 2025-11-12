@@ -1,0 +1,16 @@
+{
+	"name": "@interview/tsconfig",
+	"description": "Shareable TypeScript configuration files for interview.",
+	"private": true,
+	"version": "0.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wellsterhealthtech/interview.git",
+		"directory": "packages/tsconfig"
+	},
+	"files": [
+		"base.json",
+		"bundler.app.json",
+		"bundler.node.json"
+	]
+}

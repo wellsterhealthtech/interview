@@ -1,0 +1,27 @@
+{
+	"$schema": "https://www.schemastore.org/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"checkJs": true,
+		"erasableSyntaxOnly": true,
+		"esModuleInterop": true,
+		"exactOptionalPropertyTypes": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"moduleDetection": "force",
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"noUncheckedSideEffectImports": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ESNext",
+		"verbatimModuleSyntax": true
+	}
+}

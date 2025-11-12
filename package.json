@@ -1,0 +1,22 @@
+{
+	"name": "interview",
+	"description": "Starter for interviewing software engineers at Wellster",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"format": "prettier --write --experimental-cli .",
+		"lint": "prettier --check --experimental-cli . && oxlint --type-aware .",
+		"preinstall": "npx only-allow pnpm"
+	},
+	"devDependencies": {
+		"@prettier/plugin-oxc": "catalog:",
+		"oxlint": "catalog:",
+		"oxlint-tsgolint": "catalog:",
+		"prettier": "catalog:"
+	},
+	"engines": {
+		"node": "24.11.1"
+	},
+	"packageManager": "pnpm@10.21.0"
+}

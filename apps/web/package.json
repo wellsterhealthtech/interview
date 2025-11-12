@@ -1,0 +1,31 @@
+{
+	"name": "@interview/web",
+	"description": "Interview frontend powered by React",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wellsterhealthtech/interview.git",
+		"directory": "apps/web"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "catalog:web",
+		"react-dom": "catalog:web"
+	},
+	"devDependencies": {
+		"@interview/tsconfig": "workspace:*",
+		"@types/node": "catalog:",
+		"@types/react": "catalog:web",
+		"@types/react-dom": "catalog:web",
+		"@vitejs/plugin-react": "catalog:web",
+		"typescript": "catalog:",
+		"vite": "catalog:web"
+	}
+}

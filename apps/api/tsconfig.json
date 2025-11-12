@@ -1,0 +1,10 @@
+{
+	"extends": "@interview/tsconfig/base",
+	"compilerOptions": {
+		"outDir": "dist",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"lib": ["ESNext"]
+	},
+	"include": ["src/**/*.ts"]
+}
