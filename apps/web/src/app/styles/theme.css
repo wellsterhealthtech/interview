@@ -1,16 +1,16 @@
 @theme {
 	/* Generated with: https://tints.dev/ */
-	--color-primary-50: oklch(0.969 0.046 161.09);
-	--color-primary-100: oklch(0.925 0.113 160.36);
-	--color-primary-200: oklch(0.857 0.185 160.36);
-	--color-primary-300: oklch(0.798 0.172 160.49);
-	--color-primary-400: oklch(0.741 0.16 160.39);
-	--color-primary-500: oklch(0.685 0.148 160.36); /* #1CB57A */
-	--color-primary-600: oklch(0.57 0.123 160.33);
-	--color-primary-700: oklch(0.461 0.1 160.34);
-	--color-primary-800: oklch(0.352 0.077 160.14);
-	--color-primary-900: oklch(0.245 0.054 159.33);
-	--color-primary-950: oklch(0.193 0.041 160.44);
+	--color-primary-50: oklch(0.938 0.097 160.55);
+	--color-primary-100: oklch(0.875 0.19 160.54);
+	--color-primary-200: oklch(0.773 0.168 160.36);
+	--color-primary-300: oklch(0.665 0.144 160.42);
+	--color-primary-400: oklch(0.564 0.123 160.11);
+	--color-primary-500: oklch(0.461 0.1 160.48); /* #0A6945 */
+	--color-primary-600: oklch(0.395 0.086 160.23);
+	--color-primary-700: oklch(0.329 0.072 160.02);
+	--color-primary-800: oklch(0.27 0.059 159.81);
+	--color-primary-900: oklch(0.201 0.044 159.81);
+	--color-primary-950: oklch(0.161 0.036 160.1);
 
 	--color-secondary-50: oklch(0.967 0.014 57.62);
 	--color-secondary-100: oklch(0.924 0.033 57.13);
