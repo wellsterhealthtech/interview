@@ -1,1 +1,8 @@
 pnpm-lock.yaml
+
+# api
+apps/api/dist
+
+# web
+apps/web/**/routeTree.gen.ts
+apps/web/public
