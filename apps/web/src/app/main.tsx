@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
+import "virtual:uno.css";
 import "./styles/app.css";
 import { routeTree } from "../routeTree.gen";
 

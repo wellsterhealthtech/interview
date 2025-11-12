@@ -4,7 +4,7 @@ function DashboardPage() {
 	const [count, setCount] = useState(0);
 
 	return (
-		<main className="wrapper">
+		<section>
 			<div>
 				<a className="animated-underline" data-config-color="accent" href="https://vite.dev">
 					Vite
@@ -14,6 +14,7 @@ function DashboardPage() {
 				</a>
 			</div>
 			<h1>Vite + React</h1>
+			<span className="i-lucide-home"></span>
 			<div>
 				<button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
 				<p>
@@ -21,7 +22,7 @@ function DashboardPage() {
 				</p>
 			</div>
 			<p>Click on the Vite and React logos to learn more</p>
-		</main>
+		</section>
 	);
 }
 

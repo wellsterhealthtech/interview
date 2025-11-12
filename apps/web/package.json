@@ -21,15 +21,18 @@
 		"react-dom": "catalog:web"
 	},
 	"devDependencies": {
+		"@iconify-json/lucide": "catalog:web",
 		"@interview/tsconfig": "workspace:*",
 		"@tailwindcss/vite": "catalog:web",
 		"@tanstack/router-plugin": "catalog:web",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:web",
 		"@types/react-dom": "catalog:web",
+		"@unocss/preset-icons": "catalog:web",
 		"@vitejs/plugin-react": "catalog:web",
 		"tailwindcss": "catalog:web",
 		"typescript": "catalog:",
+		"unocss": "catalog:web",
 		"vite": "catalog:web"
 	}
 }

@@ -7,7 +7,9 @@ export const Route = createRootRoute({
 function RootComponent() {
 	return (
 		<>
-			<Outlet />
+			<main className="wrapper">
+				<Outlet />
+			</main>
 		</>
 	);
 }
