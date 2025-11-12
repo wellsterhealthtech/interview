@@ -1,0 +1,116 @@
+@theme {
+	/* Generated with: https://tints.dev/ */
+	--color-primary-50: oklch(0.969 0.046 161.09);
+	--color-primary-100: oklch(0.925 0.113 160.36);
+	--color-primary-200: oklch(0.857 0.185 160.36);
+	--color-primary-300: oklch(0.798 0.172 160.49);
+	--color-primary-400: oklch(0.741 0.16 160.39);
+	--color-primary-500: oklch(0.685 0.148 160.36); /* #1CB57A */
+	--color-primary-600: oklch(0.57 0.123 160.33);
+	--color-primary-700: oklch(0.461 0.1 160.34);
+	--color-primary-800: oklch(0.352 0.077 160.14);
+	--color-primary-900: oklch(0.245 0.054 159.33);
+	--color-primary-950: oklch(0.193 0.041 160.44);
+
+	--color-secondary-50: oklch(0.967 0.014 57.62);
+	--color-secondary-100: oklch(0.924 0.033 57.13);
+	--color-secondary-200: oklch(0.858 0.07 63.14);
+	--color-secondary-300: oklch(0.781 0.114 66.86);
+	--color-secondary-400: oklch(0.712 0.104 66.68);
+	--color-secondary-500: oklch(0.634 0.093 66.97); /* #B07F4A */
+	--color-secondary-600: oklch(0.539 0.078 66.82);
+	--color-secondary-700: oklch(0.434 0.063 67.49);
+	--color-secondary-800: oklch(0.338 0.05 65.92);
+	--color-secondary-900: oklch(0.236 0.035 68.42);
+	--color-secondary-950: oklch(0.189 0.028 66.25);
+
+	--color-surface-50: oklch(100% 0 0);
+	--color-surface-100: oklch(99.13% 0.001 287.33);
+	--color-surface-200: oklch(99.13% 0.001 287.33);
+	--color-surface-300: oklch(98.27% 0.003 286.82);
+	--color-surface-400: oklch(98.27% 0.003 286.82);
+	--color-surface-500: oklch(97.67% 0.003 286.81); /* #F7F7F9 */
+	--color-surface-600: oklch(81.27% 0.022 285.94);
+	--color-surface-700: oklch(64.1% 0.046 285.04);
+	--color-surface-800: oklch(47.67% 0.062 283.79);
+	--color-surface-900: oklch(30.57% 0.046 283.31);
+	--color-surface-950: oklch(22.72% 0.035 283.3);
+
+	--color-base-on-main: light-dark(var(--color-primary-900), var(--color-surface-500));
+	--color-accent-on-main-primary: light-dark(var(--color-primary-500), var(--color-primary-100));
+	--color-accent-on-main-secondary: light-dark(
+		var(--color-secondary-500),
+		var(--color-secondary-100)
+	);
+	--color-base-on-accent: light-dark(var(--color-surface-500), var(--color-primary-900));
+
+	--color-background-main: light-dark(var(--color-surface-500), var(--color-primary-900));
+	--color-background-accent-primary: light-dark(var(--color-primary-500), var(--color-primary-100));
+	--color-background-accent-secondary: light-dark(
+		var(--color-secondary-500),
+		var(--color-secondary-100)
+	);
+
+	/* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1440,22,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+	--spacing-3xs: clamp(0.25rem, 0.2143rem + 0.1786vw, 0.375rem);
+	--spacing-2xs: clamp(0.5rem, 0.4464rem + 0.2679vw, 0.6875rem);
+	--spacing-xs: clamp(0.75rem, 0.6607rem + 0.4464vw, 1.0625rem);
+	--spacing-s: clamp(1rem, 0.8929rem + 0.5357vw, 1.375rem);
+	--spacing-m: clamp(1.5rem, 1.3393rem + 0.8036vw, 2.0625rem);
+	--spacing-l: clamp(2rem, 1.7857rem + 1.0714vw, 2.75rem);
+	--spacing-xl: clamp(3rem, 2.6786rem + 1.6071vw, 4.125rem);
+	--spacing-2xl: clamp(4rem, 3.5714rem + 2.1429vw, 5.5rem);
+	--spacing-3xl: clamp(6rem, 5.3571rem + 3.2143vw, 8.25rem);
+
+	--spacing-3xs-2xs: clamp(0.25rem, 0.125rem + 0.625vw, 0.6875rem);
+	--spacing-2xs-xs: clamp(0.5rem, 0.3393rem + 0.8036vw, 1.0625rem);
+	--spacing-xs-s: clamp(0.75rem, 0.5714rem + 0.8929vw, 1.375rem);
+	--spacing-s-m: clamp(1rem, 0.6964rem + 1.5179vw, 2.0625rem);
+	--spacing-m-l: clamp(1.5rem, 1.1429rem + 1.7857vw, 2.75rem);
+	--spacing-l-xl: clamp(2rem, 1.3929rem + 3.0357vw, 4.125rem);
+	--spacing-xl-2xl: clamp(3rem, 2.2857rem + 3.5714vw, 5.5rem);
+	--spacing-2xl-3xl: clamp(4rem, 2.7857rem + 6.0714vw, 8.25rem);
+
+	/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1440,22,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+	--text-step-xs: clamp(0.6944rem, 0.6718rem + 0.1134vw, 0.7738rem);
+	--text-step-sm: clamp(0.8333rem, 0.7767rem + 0.2831vw, 1.0315rem);
+	--text-step-base: clamp(1rem, 0.8929rem + 0.5357vw, 1.375rem);
+	--text-step-lg: clamp(1.2rem, 1.0192rem + 0.9041vw, 1.8329rem);
+	--text-step-xl: clamp(1.44rem, 1.1534rem + 1.4332vw, 2.4432rem);
+	--text-step-2xl: clamp(1.728rem, 1.2912rem + 2.184vw, 3.2568rem);
+	--text-step-3xl: clamp(2.0736rem, 1.4257rem + 3.2396vw, 4.3413rem);
+	--text-step-4xl: clamp(2.4883rem, 1.5458rem + 4.7124vw, 5.787rem);
+
+	--text-heading-sm: var(--text-step-xl);
+	--text-heading-regular: var(--text-step-2xl);
+	--text-heading-lg: var(--text-step-3xl);
+	--text-heading-xl: var(--text-step-4xl);
+
+	/* reference: https://app.unpkg.com/open-props@1.7.15/files/src/props.easing.css */
+	--ease-2: cubic-bezier(0.25, 0, 0.4, 1);
+	--ease-out-4: cubic-bezier(0, 0, 0.1, 1);
+	--ease-spring-4: linear(
+		0,
+		0.009,
+		0.037 1.7%,
+		0.153 3.6%,
+		0.776 10.3%,
+		1.001,
+		1.142 16%,
+		1.185,
+		1.209 19%,
+		1.215 19.9% 20.8%,
+		1.199,
+		1.165 25%,
+		1.056 30.3%,
+		1.008 33%,
+		0.973,
+		0.955 39.2%,
+		0.953 41.1%,
+		0.957 43.3%,
+		0.998 53.3%,
+		1.009 59.1% 63.7%,
+		0.998 78.9%,
+		1
+	);
+}

@@ -21,10 +21,12 @@
 	},
 	"devDependencies": {
 		"@interview/tsconfig": "workspace:*",
+		"@tailwindcss/vite": "catalog:web",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:web",
 		"@types/react-dom": "catalog:web",
 		"@vitejs/plugin-react": "catalog:web",
+		"tailwindcss": "catalog:web",
 		"typescript": "catalog:",
 		"vite": "catalog:web"
 	}
