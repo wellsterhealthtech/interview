@@ -1,7 +1,6 @@
 import { useState } from "react";
-import "./styles/app.css";
 
-function App() {
+function DashboardPage() {
 	const [count, setCount] = useState(0);
 
 	return (
@@ -26,4 +25,4 @@ function App() {
 	);
 }
 
-export default App;
+export default DashboardPage;

@@ -16,12 +16,14 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
+		"@tanstack/react-router": "catalog:web",
 		"react": "catalog:web",
 		"react-dom": "catalog:web"
 	},
 	"devDependencies": {
 		"@interview/tsconfig": "workspace:*",
 		"@tailwindcss/vite": "catalog:web",
+		"@tanstack/router-plugin": "catalog:web",
 		"@types/node": "catalog:",
 		"@types/react": "catalog:web",
 		"@types/react-dom": "catalog:web",
