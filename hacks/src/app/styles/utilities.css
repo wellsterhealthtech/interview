@@ -1,0 +1,69 @@
+@utility wrapper {
+	--_maxWidth: 1280px;
+	inline-size: min(var(--_maxWidth), 100% - calc(2rem + var(--spacing-s-m)));
+	margin-inline: auto;
+
+	&[data-config-wrapper="wide"] {
+		--_maxWidth: 1240px;
+	}
+
+	&[data-config-wrapper="narrow"] {
+		--_maxWidth: 1028px;
+	}
+
+	&[data-config-wrapper="prose"] {
+		--_maxWidth: 65ch;
+	}
+}
+
+@utility animated-underline {
+	--_color: var(--color-base-on-main);
+
+	position: relative;
+	z-index: 1;
+	text-decoration-line: underline;
+	text-decoration-style: dashed;
+	text-decoration-color: var(--_color);
+	text-underline-offset: 4px;
+
+	&::after {
+		position: absolute;
+		inset: 0;
+		content: "";
+		z-index: -1;
+
+		background-color: oklch(from var(--_color) l c h / 0.2);
+
+		transform-origin: left;
+		scale: 0 1;
+	}
+
+	&:where(:hover, :focus-visible) {
+		text-decoration-style: solid;
+		&::after {
+			scale: 1 1;
+		}
+	}
+
+	&[data-config-color="accent"] {
+		--_color: var(--color-accent-on-main-primary);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		&::after {
+			transition: scale 500ms var(--ease-out-4);
+		}
+	}
+}
+
+@utility sr-only {
+	position: absolute;
+	inline-size: 1px;
+	block-size: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}

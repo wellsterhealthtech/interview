@@ -1,0 +1,83 @@
+@layer base {
+	:root {
+		color-scheme: light dark;
+		--_scrollbar-track-color: var(--color-background-main);
+		--_scrollbar-thumb-color: var(--color-background-accent-primary);
+	}
+
+	::selection {
+		background-color: var(--color-base-on-main);
+		color: var(--color-background-main);
+	}
+
+	html {
+		color: var(--color-base-on-main);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		@view-transition {
+			navigation: auto;
+		}
+		html {
+			scroll-behavior: smooth;
+
+			transition: color 500ms var(--ease-2);
+		}
+		body {
+			transition: background-color 500ms var(--ease-2);
+		}
+	}
+
+	@supports (scrollbar-color: auto) {
+		html {
+			scrollbar-color: var(--_scrollbar-thumb-color) var(--_scrollbar-track-color);
+			scrollbar-width: thin;
+		}
+	}
+
+	@supports selector(::-webkit-scrollbar) {
+		html::-webkit-scrollbar {
+			inline-size: 0.25rem;
+			background-color: var(--_scrollbar-track-color);
+		}
+
+		html::-webkit-scrollbar-thumb {
+			background-color: var(--_scrollbar-thumb-color);
+			border-radius: calc(infinity * 1px);
+		}
+	}
+
+	body {
+		font-size: var(--text-step-base);
+		background-color: var(--color-background-main);
+	}
+
+	:where(h1) {
+		font-size: var(--text-heading-xl);
+	}
+
+	:where(button) {
+		background-color: transparent;
+		border: none;
+		color: inherit;
+	}
+
+	:where(a, button, summary, input) {
+		--_base-focus-outline-color: var(--color-accent-on-main-primary);
+		--_base-focus-outline-transition: outline-offset var(--ease-2) 200ms;
+		outline-offset: 0;
+		transition: var(--_base-focus-outline-transition);
+		&:focus-visible {
+			outline-style: solid;
+			outline-width: 2px;
+			outline-color: var(--_base-focus-outline-color);
+			outline-offset: 4px;
+		}
+	}
+}
+
+@layer base.icons {
+	[class^="i-"] {
+		display: block;
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"name": "@interview/hacks",
+	"description": "Interview frontend powered by React for usage outside of monorepo",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wellsterhealthtech/interview.git",
+		"directory": "hacks"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"format": "prettier --write --experimental-cli .",
+		"lint": "prettier --check --experimental-cli . && oxlint --type-aware .",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@tanstack/react-router": "^1.135.2",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
+	},
+	"devDependencies": {
+		"@prettier/plugin-oxc": "^0.0.4",
+		"oxlint": "^1.23.0",
+		"oxlint-tsgolint": "^0.5.1",
+		"prettier": "^3.6.2",
+		"prettier-plugin-tailwindcss": "^0.7.1",
+		"@iconify-json/lucide": "^1.2.73",
+		"@tailwindcss/vite": "^4.1.17",
+		"@tanstack/router-plugin": "^1.135.2",
+		"@types/node": "^24.7.2",
+		"@types/react": "^19.2.2",
+		"@types/react-dom": "^19.2.2",
+		"@unocss/preset-icons": "^66.5.6",
+		"@vitejs/plugin-react": "^5.1.0",
+		"tailwindcss": "^4.1.17",
+		"typescript": "^5.9.2",
+		"unocss": "^66.5.6",
+		"vite": "npm:rolldown-vite@7.2.2"
+	},
+	"overrides": {
+		"vite": "npm:rolldown-vite@7.2.2"
+	}
+}
