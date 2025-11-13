@@ -37,6 +37,7 @@ function DashboardPage() {
 								</div>
 
 								<p>Age: {patient.age}</p>
+								<p>{patient.description}</p>
 
 								<div>
 									ID: {patient.id}
