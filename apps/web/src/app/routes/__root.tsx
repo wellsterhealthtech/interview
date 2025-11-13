@@ -1,15 +1,6 @@
-import { Outlet, createRootRoute } from "@tanstack/react-router";
+import { createRootRoute } from "@tanstack/react-router";
+import SimpleSidebarLayout from "$shared/ui/layout/SimpleSidebarLayout";
 
 export const Route = createRootRoute({
-	component: RootComponent,
+	component: SimpleSidebarLayout,
 });
-
-function RootComponent() {
-	return (
-		<>
-			<main className="wrapper">
-				<Outlet />
-			</main>
-		</>
-	);
-}

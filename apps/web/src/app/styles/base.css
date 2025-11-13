@@ -48,10 +48,6 @@
 	}
 
 	body {
-		display: grid;
-		grid-template-rows: auto 1fr auto;
-		row-gap: var(--spacing-2xl-3xl);
-
 		font-size: var(--text-step-base);
 		background-color: var(--color-background-main);
 	}

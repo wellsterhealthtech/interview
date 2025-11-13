@@ -30,6 +30,7 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			$pages: resolve(import.meta.dirname, "/src/pages"),
+			$shared: resolve(import.meta.dirname, "/src/shared"),
 		},
 	},
 });
