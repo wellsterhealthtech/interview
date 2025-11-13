@@ -26,19 +26,19 @@ function DashboardPage() {
 			<section>
 				<h1>Overview Patients</h1>
 				<p>Current number of Patients: {totalNumberOfPatients}</p>
-				<ul>
+				<div>
 					{patients.map((patient) => (
-						<li key={patient.id}>
-							<article>
-								<header>
+						<div key={patient.id}>
+							<div>
+								<div>
 									<h2>
 										{patient.firstName} {patient.lastName}
 									</h2>
-								</header>
+								</div>
 
 								<p>Age: {patient.age}</p>
 
-								<footer>
+								<div>
 									ID: {patient.id}
 									<div
 										onClick={() => {
@@ -48,11 +48,11 @@ function DashboardPage() {
 									>
 										Show more
 									</div>
-								</footer>
-							</article>
-						</li>
+								</div>
+							</div>
+						</div>
 					))}
-				</ul>
+				</div>
 			</section>
 
 			<dialog closedby="any">
