@@ -1,6 +1,6 @@
 # Interview
 
-This is the starter repository for interviewing software engineers with frontend-focus at Wellster.
+This is the starter repository for interviewing Software Engineers with Frontend-focus at Wellster.
 
 ## 📋 What you need
 

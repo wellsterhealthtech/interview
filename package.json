@@ -1,6 +1,6 @@
 {
 	"name": "interview",
-	"description": "Starter for interviewing software engineers at Wellster",
+	"description": "Starter for interviewing Software Engineers with Frontend-focus at Wellster",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
