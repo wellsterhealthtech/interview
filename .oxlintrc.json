@@ -1,6 +1,6 @@
 {
 	"$schema": "./node_modules/oxlint/configuration_schema.json",
-	"plugins": ["oxc", "typescript", "unicorn", "import"],
+	"plugins": ["oxc", "typescript", "unicorn", "import", "react"],
 	"categories": {
 		"correctness": "error",
 		"perf": "error",
@@ -17,6 +17,9 @@
 	"rules": {
 		"eslint/arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
 		"import/no-cycle": "error",
+		"import/no-unassigned-import": ["error", { "allow": ["./styles.css", "virtual:uno.css"] }],
+		"react/exhaustive-deps": "error",
+		"react/react-in-jsx-scope": "off",
 		"typescript/consistent-type-imports": "off"
 	}
 }

@@ -1,7 +1,65 @@
+import getPatients from "$entities/patient/api/getPatients";
+import type { Patient } from "$entities/patient/model/patient";
+import { useEffect, useState } from "react";
+import "./styles.css";
+
 function DashboardPage() {
+	const [patients, setPatients] = useState<Patient[]>([]);
+	const [totalNumberOfPatients, setTotalNumberOfPatients] = useState(0);
+	const [selectedPatient, setSelectedPatient] = useState<Patient | null>(null);
+	const [dialogElement, setDialogElement] = useState<HTMLDialogElement | null>(null);
+
+	useEffect(() => {
+		getPatients().then((result) => setPatients(result));
+	}, []);
+
+	useEffect(() => {
+		setTotalNumberOfPatients(patients.length);
+	}, [patients]);
+
+	useEffect(() => {
+		setDialogElement(document.querySelector("dialog"));
+	}, []);
+
 	return (
 		<>
-			<section className="h-full"></section>
+			<section>
+				<h1>Overview Patients</h1>
+				<p>Current number of Patients: {totalNumberOfPatients}</p>
+				<ul>
+					{patients.map((patient) => (
+						<li key={patient.id}>
+							<article>
+								<header>
+									<h2>
+										{patient.firstName} {patient.lastName}
+									</h2>
+								</header>
+
+								<p>Age: {patient.age}</p>
+
+								<footer>
+									ID: {patient.id}
+									<div
+										onClick={() => {
+											setSelectedPatient(patient);
+											dialogElement?.showModal();
+										}}
+									>
+										Show more
+									</div>
+								</footer>
+							</article>
+						</li>
+					))}
+				</ul>
+			</section>
+
+			<dialog closedby="any">
+				<article>
+					{selectedPatient ? <p>{selectedPatient.firstName}</p> : <p>No Patient selected</p>}
+				</article>
+			</dialog>
 		</>
 	);
 }

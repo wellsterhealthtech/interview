@@ -58,7 +58,9 @@ function SimpleSidebarLayout() {
 				</Link>
 			</aside>
 			<div className="p-xs-s">
-				<Outlet />
+				<div className="h-full rounded-md bg-background-accent-primary/10 p-xs-s">
+					<Outlet />
+				</div>
 			</div>
 		</main>
 	);

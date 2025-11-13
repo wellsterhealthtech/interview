@@ -1,0 +1,66 @@
+@layer components {
+	dialog {
+		--_theming: var(--color-accent-on-main-primary);
+		/* reset default styling */
+		inline-size: unset;
+		block-size: unset;
+		max-inline-size: unset;
+		max-block-size: unset;
+		background: none;
+		border: none;
+		padding: 0;
+		overflow: clip;
+		color: var(--color-base-on-main);
+
+		position: fixed;
+		inset-block: 0;
+		inset-inline: 0;
+
+		max-inline-size: min(100%, 24rem);
+		background-color: var(--color-background-main);
+		margin-inline-start: auto;
+		padding: var(--spacing-2xs-xs);
+
+		/* closed state */
+		&,
+		&::backdrop {
+			transition:
+				display 0.5s allow-discrete,
+				overlay 0.5s allow-discrete,
+				opacity 0.5s cubic-bezier(0.25, 0, 0.2, 1),
+				translate 0.7s cubic-bezier(0.5, -0.3, 0.1, 1.5);
+
+			opacity: 0;
+		}
+		& {
+			translate: 100% 0;
+		}
+
+		/* open state */
+		&[open] {
+			opacity: 1;
+			translate: 0 0;
+
+			&::backdrop {
+				opacity: 1;
+			}
+		}
+
+		/* enter stage from */
+		@starting-style {
+			&[open],
+			&[open]::backdrop {
+				opacity: 0;
+			}
+
+			&[open] {
+				translate: 100% 0;
+			}
+		}
+
+		&::backdrop {
+			background-color: oklch(from var(--color-background-main) l c h / 0.65);
+			backdrop-filter: blur(1.25rem);
+		}
+	}
+}
