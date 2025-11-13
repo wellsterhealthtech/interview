@@ -23,10 +23,10 @@ function DashboardPage() {
 
 	return (
 		<>
-			<section>
+			<section className="w-full">
 				<h1>Overview Patients</h1>
 				<p>Current number of Patients: {totalNumberOfPatients}</p>
-				<div>
+				<div className="block w-full">
 					{patients.map((patient) => (
 						<div key={patient.id}>
 							<div>
